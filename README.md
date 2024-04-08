@@ -1,33 +1,17 @@
-# Electron_Vue_TS
+# electron模板
+# 手动定义electron插件，完成electron的自动运行以及打包
+ 无须额外启动端口运行electron进程，运行项目以及build时，会自动执行electron的运行以及打包
+## 快速生成
+1.开发环境下electron配置
+2.打包构建electron应用，生成安装包
 
-This template should help get you started developing with Vue 3 in Vite.
+# 运行步骤
+1.npm install
 
-## Recommended IDE Setup
+2.npm run dev 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+3.npm run build
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+# 常见错误
+若报错：找不到模块electron/electron-builder或其他响应的类型声明
+可尝试再次安装依赖包：npm install electron electron-builder -D
