@@ -17,3 +17,11 @@
 若报错：找不到模块electron/electron-builder或其他响应的类型声明
 
 可尝试再次安装依赖包：npm install electron electron-builder -D
+
+安装报错
+npm ERR! code 1
+npm ERR! path xxx/electron
+npm ERR! command failed
+这是由于electron的安装引发的错误，可参考
+https://blog.csdn.net/shidas/article/details/125941408
+ yarn/npm   install --ignore-scripts
