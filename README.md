@@ -25,3 +25,6 @@ npm ERR! command failed
 这是由于electron的安装引发的错误，可参考
 https://blog.csdn.net/shidas/article/details/125941408
  yarn/npm   install --ignore-scripts
+
+2.electron安装包问题
+如果用户本地不存在electron打包的安装包，就会去github上下载，但是通常会失败，因此可以手动下载与项目electron版本一致的安装包放到本地，例如此项目用到29.2.0版本的electron，于是就可以手动下载https://registry.npmmirror.com/-/binary/electron/29.2.0/electron-v29.2.0-win32-x64.zip，然后放到本地的C:\Users\YourUsername\AppData\Local\electron\Cache\electron-v29.2.0-win32-x64.zip（🔴无需解压）
